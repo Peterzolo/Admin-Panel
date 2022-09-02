@@ -19,7 +19,7 @@ const Sidebar = () => {
     <div className="sidebar-container">
       <div className="top">
         <span className="logo">
-          <img src={Logo} alt="" width="50" className="logo-image"/>
+          <img src={Logo} alt="" width="50" className="logo-image" />
         </span>
       </div>
       <div className="middle">
@@ -77,7 +77,7 @@ const Sidebar = () => {
             <AccountCircleIcon />
             <div>Profile</div>
           </li>
-          
+
           <li>
             <LogoutIcon />
             <div>Logout</div>
@@ -85,7 +85,11 @@ const Sidebar = () => {
         </ul>
       </div>
       <div className="bottom">
-        <div className="theme">Dark/White</div>
+        <div className="mode">Mode</div>
+        <div className="mode-wrapper">
+          <div className="colorOption">light</div>
+          <div className="colorOption">Dark</div>
+        </div>
       </div>
     </div>
   );
