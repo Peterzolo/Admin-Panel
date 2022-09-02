@@ -19,11 +19,12 @@ const Sidebar = () => {
     <div className="sidebar-container">
       <div className="top">
         <span className="logo">
-          <img src={Logo} alt="" width="50" />
+          <img src={Logo} alt="" width="50" className="logo-image"/>
         </span>
       </div>
       <div className="middle">
         <ul>
+          <p className="title">Main</p>
           <li>
             <DashboardIcon />
             <div>Dashboard</div>
@@ -36,6 +37,7 @@ const Sidebar = () => {
             <InventoryIcon />
             <div>Product</div>
           </li>
+          <p className="title">Business</p>
           <li>
             <PaymentIcon />
             <div>Payment</div>
@@ -48,6 +50,7 @@ const Sidebar = () => {
             <ApiIcon />
             <div>Api</div>
           </li>
+          <p className="title">Info</p>
           <li>
             <DocumentScannerIcon />
             <div>Documentation</div>
@@ -55,6 +58,10 @@ const Sidebar = () => {
           <li>
             <BiotechIcon />
             <div>Bio</div>
+          </li>
+          <li>
+            <NotificationsOffIcon />
+            <div>Notification</div>
           </li>
 
           <li>
@@ -65,14 +72,12 @@ const Sidebar = () => {
             <SettingsIcon />
             <div>Setting</div>
           </li>
+          <p className="title">Users</p>
           <li>
             <AccountCircleIcon />
             <div>Profile</div>
           </li>
-          <li>
-            <NotificationsOffIcon />
-            <div>Notification</div>
-          </li>
+          
           <li>
             <LogoutIcon />
             <div>Logout</div>
