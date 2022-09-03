@@ -1,0 +1,36 @@
+.nav-container{
+    height: 50px;
+    border-bottom: 0.5ps solid #8c8c8c;
+    font-size: 14px;
+    color: #8c8c8c;
+    .nav-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px;
+        width: 100%;
+        .search{
+            display: flex;
+            align-items: center;
+            border: 0.5px solid #8c8c8c;
+            padding: 4px;
+            border-radius: 20px;
+            input{
+                outline: none;
+                border: none;
+                background: transparent;
+                text-align: center;
+                color: #8c8c8c;
+            }
+        }
+        .links{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            .link-item{
+                margin-right: 20px;
+            }
+        }
+    }
+
+}

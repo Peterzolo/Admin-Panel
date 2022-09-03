@@ -1,5 +1,5 @@
 import React from "react";
-
+import Navbar from "../../components/navbar/Navbar";
 import Sidebar from "../../components/sidebar/Sidebar";
 
 import "./Home.scss";
@@ -12,7 +12,8 @@ const Home = () => {
           <Sidebar />
         </div>
         <div className="col-md-10" style={{ backgroundColor: "#f0f0f0" }}>
-          <h3>Right</h3>
+          <Navbar/>
+          <h2>Home content</h2>
         </div>
       </div>
     </div>
