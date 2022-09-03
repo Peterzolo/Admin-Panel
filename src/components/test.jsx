@@ -1,18 +1,4 @@
-import React from "react";
-import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
-import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
-import DarkModeTwoToneIcon from "@mui/icons-material/DarkModeTwoTone";
-import FullscreenExitTwoToneIcon from "@mui/icons-material/FullscreenExitTwoTone";
-import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
-import ChatBubbleIcon from "@mui/icons-material/ChatBubble";
-import ListAltIcon from "@mui/icons-material/ListAlt";
-import Avatar from "../../images/Avatar.png";
-import "./Navbar.scss";
-const Navbar = () => {
-  return (
-    <div className="nav-container">
-      <div className="wrapper">
-        <div className="search">
+<div className="search">
           <input type="text" placeholder="Search..." />
           <SearchOutlinedIcon />
         </div>
@@ -45,9 +31,3 @@ const Navbar = () => {
           <img src={Avatar} alt="" className="avatar" />
           </div>
         </div>
-      </div>
-    </div>
-  );
-};
-
-export default Navbar;

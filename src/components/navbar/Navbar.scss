@@ -3,10 +3,14 @@
     border-bottom: 0.5ps solid #8c8c8c;
     font-size: 14px;
     color: #8c8c8c;
-    .nav-wrapper{
+    background-color: #d9d9d9;
+    display: flex;
+    align-items: center;
+
+    .wrapper{
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         padding: 20px;
         width: 100%;
         .search{
@@ -21,6 +25,9 @@
                 background: transparent;
                 text-align: center;
                 color: #8c8c8c;
+               &::placeholder{
+                font-size: 12px;
+               }
             }
         }
         .links{
@@ -28,7 +35,33 @@
             align-items: center;
             justify-content: space-around;
             .link-item{
-                margin-right: 20px;
+                position: relative;
+                margin: 20px;
+                display: flex;
+                align-items: center;
+                .avatar{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 20px;
+                }
+                .icon{
+                    font-size: 20px;
+                }
+                .counter{
+                    width: 15px;
+                    height: 15px;
+                  position: absolute;
+                  top: -5px;
+                  right: -5px;
+                  background-color: #ad2102;
+                  padding: 5px;
+                  color: white;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  font-size: 10px;
+                  justify-content: center;
+                }
             }
         }
     }
