@@ -14,8 +14,11 @@ const Home = () => {
         </div>
         <div className="col-md-10">
           <Navbar/>
-          <div className="widget">
-            <Widget/>
+          <div className="widgets">
+            <Widget type = "user"/>
+            <Widget type = "order"/>
+            <Widget type = "earning"/>
+            <Widget type = "balance"/>
           </div>
         </div>
       </div>
