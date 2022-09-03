@@ -1,0 +1,58 @@
+.featured-container {
+  flex: 2;
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px #c9c9c978;
+  padding: 10px;
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #8c8c8c;
+
+    .title {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+  .bottom {
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    .featured-progress {
+      width: 100px;
+      height: 100px;
+    }
+    .sales-info {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding: 20px;
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+      box-shadow: 2px 4px 10px 1px #c9c9c978;
+     
+      .title-sales {
+        width: 50%;
+        text-align: left;
+        font-weight: 400;
+        font-size: 16px;
+        color: #006d75;
+      }
+      .amount-sales {
+        width: 50%;
+        text-align: right;
+        font-weight: 600;
+        font-size: 16px;
+        color: #faad14;
+      }
+    }
+    .desc{
+      color: #8c8c8c;
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+      box-shadow: 2px 4px 10px 1px #c9c9c978;
+      padding: 10px;
+      font-weight: 400;
+    }
+  }
+}

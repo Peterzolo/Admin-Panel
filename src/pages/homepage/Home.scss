@@ -1,10 +1,14 @@
 .home-page{
    padding-left: 10px;
    padding-right: 10px;
-   .widgets{
+   .widgets, .chart{
       display: flex;
       align-items: center;
       gap: 20px;
       padding: 20px;
+   }
+   .chart{
+      padding: 5px 20px;
+     
    }
 }
