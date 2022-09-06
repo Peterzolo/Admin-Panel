@@ -28,6 +28,29 @@ const Featured = () => {
           up with a set of color generation tools that combine the natural
           variation of colors.
         </p>
+        <div className="summary">
+          <div className="item-wrap">
+            <div className="item-title">This Week</div>
+            <div className="item-result positive">
+              <KeyboardArrowDownIcon fontSize="small" />
+              <div className="result-amount">$500.4k</div>
+            </div>
+          </div>
+          <div className="item-wrap">
+            <div className="item-title">Last Month</div>
+            <div className="item-result negative">
+              <KeyboardArrowUpOutlinedIcon fontSize="small" />
+              <div className="result-amount">-$500.4k</div>
+            </div>
+          </div>
+          <div className="item-wrap">
+            <div className="item-title">Today</div>
+            <div className="item-result positive">
+              <KeyboardArrowDownIcon fontSize="small" />
+              <div className="result-amount">$500.4k</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
