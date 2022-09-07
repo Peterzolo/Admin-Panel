@@ -1,8 +1,10 @@
+
 import React from "react";
 import Chart from "../../components/chart/Chart";
 import Featured from "../../components/featured/Featured";
 import Navbar from "../../components/navbar/Navbar";
 import Sidebar from "../../components/sidebar/Sidebar";
+import ListTable from "../../components/table/ListTable";
 import Widget from "../../components/widget/Widget";
 
 import "./Home.scss";
@@ -28,7 +30,8 @@ const Home = () => {
           </div>
           <hr className="hr" />
           <div className="listContainer">
-           <div className="latest-transaction">Latest Transactions</div> 
+           <div className="list-title">Latest Transactions</div> 
+           <ListTable/>
           </div>
         </div>
       </div>
