@@ -7,13 +7,13 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import { listData } from "../../data/newData";
-import "./Table.scss"
+import "./Table.scss";
 
 const items = listData;
 
 const ListTable = () => {
   return (
-    <TableContainer component={Paper}>
+    <TableContainer component={Paper} className="table">
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
