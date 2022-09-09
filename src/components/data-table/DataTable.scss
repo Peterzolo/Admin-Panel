@@ -19,7 +19,7 @@
   }
   .cellWithStatus {
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     &.active {
       color: green;
       background-color: rgba(0, 128, 0, 0.151);
@@ -31,6 +31,25 @@
     &.passive {
       color: red;
       background-color: rgba(189, 189, 3, 0.103);
+    }
+  }
+  .cellAction {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    gap: 20px;
+    .viewButton {
+      background-color: #d9d9d9;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .deleteButton {
+      background-color: #d9d9d9;
+      padding: 10px;
+      color: red;
+      cursor: pointer;
+      border-radius: 5px;
     }
   }
 }
