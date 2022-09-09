@@ -1,12 +1,19 @@
-import React from 'react'
+import React from "react";
+import Sidebar from "../../components/sidebar/Sidebar";
+import Navbar from "../../components/navbar/Navbar";
 
+import "./Single.scss";
 
 const Single = () => {
   return (
-    <div>
-      <h2>Single</h2>
+    <div className="single-container">
+      <Sidebar />
+      <div className="sub-container">
+        <Navbar />
+        Single component
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Single
+export default Single;

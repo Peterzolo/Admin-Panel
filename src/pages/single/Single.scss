@@ -1,0 +1,8 @@
+.single-container {
+  display: flex;
+  width: 100%;
+  background-color: #f5f5f5;
+  .sub-container {
+    flex: 6;
+  }
+}
