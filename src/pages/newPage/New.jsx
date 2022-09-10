@@ -46,9 +46,9 @@ const New = () => {
           </div>
 
           <div className="bottom-right">
-            <form onSubmit={handleSubmit}>
+            <form className="user-form" onSubmit={handleSubmit}>
               <div className="formInput">
-                <label htmlFor="">User Name</label>
+                {/* <label>User Name</label> */}
                 <input
                   type="text"
                   placeholder="Enter username"
@@ -58,7 +58,7 @@ const New = () => {
                 />
               </div>
               <div className="formInput">
-                <label htmlFor="">Full Name</label>
+                {/* <label>Full Name</label> */}
                 <input
                   type="text"
                   placeholder="Enter Full Name"
@@ -68,7 +68,7 @@ const New = () => {
                 />
               </div>
               <div className="formInput">
-                <label htmlFor="">Email</label>
+                {/* <label>Email</label> */}
                 <input
                   type="email"
                   placeholder="Enter Email"
@@ -78,7 +78,7 @@ const New = () => {
                 />
               </div>
               <div className="formInput">
-                <label htmlFor="">Phone</label>
+                {/* <label>Phone</label> */}
                 <input
                   type="phone"
                   placeholder="Enter Phone Number"
@@ -88,7 +88,7 @@ const New = () => {
                 />
               </div>
               <div className="formInput">
-                <label htmlFor="">Password</label>
+                {/* <label>Password</label> */}
                 <input
                   type="password"
                   placeholder="Enter Password"
@@ -98,7 +98,7 @@ const New = () => {
                 />
               </div>
               <div className="formInput">
-                <label htmlFor="">Confirm password</label>
+                {/* <label>Confirm password</label> */}
                 <input
                   type="password"
                   placeholder="Confirm Password"
@@ -108,7 +108,7 @@ const New = () => {
                 />
               </div>
               <div className="formInput">
-                <label htmlFor="">Address</label>
+                {/* <label>Address</label> */}
                 <input
                   type="text"
                   placeholder="Enter Address"
@@ -118,7 +118,7 @@ const New = () => {
                 />
               </div>
               <div className="formInput">
-                <label htmlFor="">Country</label>
+                {/* <label>Country</label> */}
                 <input
                   type="text"
                   placeholder="Enter Country"
@@ -128,10 +128,10 @@ const New = () => {
                 />
               </div>
               <div className="formInput">
-                <label htmlFor="">
-                  Image <DriveFolderUploadOutlinedIcon />{" "}
+                <label htmlFor="file" className="file-input">
+                  Image <DriveFolderUploadOutlinedIcon className="icon" />{" "}
                 </label>
-                <input type="file" />
+                <input type="file" id="file" style={{ display: "none" }} />
               </div>
               <button className="sumbit-button" type="submit">
                 Add User
