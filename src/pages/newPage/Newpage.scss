@@ -1,0 +1,32 @@
+.new {
+  width: 100%;
+  display: flex;
+  .newContainer {
+    flex: 6;
+    .topNew,
+    .bottomNew {
+      h2 {
+        font-size: 20px;
+        color: #1890ff;
+        font-weight: bold;
+      }
+      padding: 10px;
+      margin: 2px;
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      display: flex;
+      .bottom-left {
+        flex: 1;
+        text-align: center;
+        .avatarImage {
+          width: 100px;
+          height: 100px;
+          object-fit: cover;
+        }
+      }
+      .bottom-right {
+        flex: 2;
+      }
+    }
+  }
+}
