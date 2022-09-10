@@ -17,10 +17,29 @@ const Single = () => {
             <div className="editButton">
               <EditIcon />
             </div>
-            <h3 className="title">User Data</h3>
+            <h3 className="title">User Information</h3>
+            <hr className="hr" />
             <div className="item">
               <img src={UserImage} alt="image" className="user-image" />
-              Details
+              <div className="details">
+                <h1 className="itemTitle">Paul Pope</h1>
+                <div className="detailItem">
+                  <span className="itemKey">Email:</span>
+                  <span className="itemValue">paulpope@gmail.com</span>
+                </div>
+                <div className="detailItem">
+                  <span className="itemKey">Phone:</span>
+                  <span className="itemValue">+234-8023152954</span>
+                </div>
+                <div className="detailItem">
+                  <span className="itemKey">Address:</span>
+                  <span className="itemValue">Elvis Avenue, Lagos</span>
+                </div>
+                <div className="detailItem">
+                  <span className="itemKey">country:</span>
+                  <span className="itemValue">West Africa</span>
+                </div>
+              </div>
             </div>
           </div>
           <div className="top-right">Right</div>
