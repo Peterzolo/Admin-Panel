@@ -4,6 +4,7 @@ import Navbar from "../../components/navbar/Navbar";
 import UserImage from "../../images/data1.jpg";
 import EditIcon from "@mui/icons-material/Edit";
 import Chart from "../../components/chart/Chart";
+import DataTable from "../../components/data-table/DataTable";
 
 import "./Single.scss";
 
@@ -44,10 +45,17 @@ const Single = () => {
             </div>
           </div>
           <div className="top-right">
-            <Chart aspect={3 / 2} title="User Transaction" />{" "}
+            <Chart
+              aspect={3 / 2}
+              title="User Transaction for the 1st quarter - 2022"
+            />{" "}
           </div>
         </div>
-        <div className="bottom"></div>
+        <hr />
+        <div className="single-bottom">
+          <h3 className="title">Transaction Summary</h3>
+          <DataTable />
+        </div>
       </div>
     </div>
   );
