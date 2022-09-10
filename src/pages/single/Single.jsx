@@ -3,6 +3,7 @@ import Sidebar from "../../components/sidebar/Sidebar";
 import Navbar from "../../components/navbar/Navbar";
 import UserImage from "../../images/data1.jpg";
 import EditIcon from "@mui/icons-material/Edit";
+import Chart from "../../components/chart/Chart";
 
 import "./Single.scss";
 
@@ -42,7 +43,9 @@ const Single = () => {
               </div>
             </div>
           </div>
-          <div className="top-right">Right</div>
+          <div className="top-right">
+            <Chart aspect={3 / 2} title="User Transaction" />{" "}
+          </div>
         </div>
         <div className="bottom"></div>
       </div>

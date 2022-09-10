@@ -47,12 +47,12 @@
           .details {
             padding: 10px;
 
-            .itemTitle {
-              font-size: 22px;
-              color: #595959;
-              font-weight: bold;
-              text-align: center;
-            }
+            // .itemTitle {
+            //   font-size: 22px;
+            //   color: #595959;
+            //   font-weight: bold;
+            //   text-align: center;
+            // }
             .detailItem {
               background-color: #fafafa;
               padding: 5px 15px;
@@ -70,8 +70,14 @@
         }
       }
       .top-right {
-        flex: 2;
+        flex: 3;
       }
     }
+  }
+  .itemTitle {
+    font-size: 22px;
+    color: #595959;
+    font-weight: bold;
+    text-align: center;
   }
 }

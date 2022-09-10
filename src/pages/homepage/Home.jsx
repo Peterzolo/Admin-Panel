@@ -1,4 +1,3 @@
-
 import React from "react";
 import Chart from "../../components/chart/Chart";
 import Featured from "../../components/featured/Featured";
@@ -17,21 +16,24 @@ const Home = () => {
           <Sidebar />
         </div>
         <div className="col-md-10">
-          <Navbar/>
+          <Navbar />
           <div className="widgets">
-            <Widget type = "user"/>
-            <Widget type = "order"/>
-            <Widget type = "earning"/>
-            <Widget type = "balance"/>
+            <Widget type="user" />
+            <Widget type="order" />
+            <Widget type="earning" />
+            <Widget type="balance" />
           </div>
           <div className="chart">
-          <Featured/>
-          <Chart/>
+            <Featured />
+            <Chart
+              aspect={3 / 2}
+              title="Monthly Sales Report [ 1st half] 2022"
+            />
           </div>
           <hr className="hr" />
           <div className="listContainer">
-           <div className="list-title">Latest Transactions</div> 
-           <ListTable/>
+            <div className="list-title">Latest Transactions</div>
+            <ListTable />
           </div>
         </div>
       </div>
