@@ -113,4 +113,14 @@
   //   input {
   //     background-color: transparent;
   //   }
+
+  .sidebar-container {
+    .bottom {
+      background-color: #1f1f1f;
+      .mode {
+        color: #fa8c16;
+        font-weight: 600;
+      }
+    }
+  }
 }
