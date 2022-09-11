@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
 import DarkModeTwoToneIcon from "@mui/icons-material/DarkModeTwoTone";
@@ -8,7 +8,9 @@ import ChatBubbleIcon from "@mui/icons-material/ChatBubble";
 import ListAltIcon from "@mui/icons-material/ListAlt";
 import Avatar from "../../images/Avatar.png";
 import "./Navbar.scss";
+import { DarkModeContext } from "../../context/modeContext";
 const Navbar = () => {
+  const { dispatch } = useContext(DarkModeContext);
   return (
     <div className="nav-container">
       <div className="wrapper">
@@ -24,7 +26,7 @@ const Navbar = () => {
           <div className="link-item">
             <DarkModeTwoToneIcon
               className="icon"
-              // onClick={() => dispatch({ type: "TOGGLE" })}
+              onClick={() => dispatch({ type: "TOGGLE" })}
             />
           </div>
           <div className="link-item">
@@ -42,7 +44,7 @@ const Navbar = () => {
             <ListAltIcon className="icon" />
           </div>
           <div className="link-item">
-          <img src={Avatar} alt="" className="avatar" />
+            <img src={Avatar} alt="" className="avatar" />
           </div>
         </div>
       </div>

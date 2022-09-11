@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { ToastContainer } from "react-toastify";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -10,12 +10,14 @@ import Single from "../pages/single/Single";
 import New from "../pages/newPage/New";
 import { productInputs, userInputs } from "../data/formSource";
 import NewProduct from "../pages/newPage/NewProduct";
+import { DarkModeContext } from "../context/modeContext";
 
 import "../components/styles/ExtraStyles.scss";
 
 function App() {
+  const { darkMode } = useContext(DarkModeContext);
   return (
-    <div className="app dark">
+    <div className={darkMode ? "app dark" : "app"}>
       <BrowserRouter>
         <Routes>
           <Route path="/">

@@ -14,8 +14,11 @@ import ApiIcon from "@mui/icons-material/Api";
 import DocumentScannerIcon from "@mui/icons-material/DocumentScanner";
 import BiotechIcon from "@mui/icons-material/Biotech";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { DarkModeContext } from "../../context/modeContext";
 
 const Sidebar = () => {
+  const { dispatch } = useContext(DarkModeContext);
   return (
     <div className="sidebar-container">
       <div className="top">
@@ -108,8 +111,18 @@ const Sidebar = () => {
       <div className="bottom">
         <div className="mode">Mode</div>
         <div className="mode-wrapper">
-          <div className="colorOption">light</div>
-          <div className="colorOption">Dark</div>
+          <div
+            className="colorOption"
+            onClick={() => dispatch({ type: "LIGHT" })}
+          >
+            light
+          </div>
+          <div
+            className="colorOption"
+            onClick={() => dispatch({ type: "DARK" })}
+          >
+            Dark
+          </div>
         </div>
       </div>
     </div>
