@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { DataGrid, GridColDef, GridValueGetterParams } from "@mui/x-data-grid";
 import "./DataTable.scss";
 import { userColumns, userRows } from "../../data/userData";
@@ -7,6 +7,11 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import TableViewIcon from "@mui/icons-material/TableView";
 
 const DataTable = () => {
+  const [data, setData] = useState(userRows);
+
+  const handleDelete = (id) => {
+    setData(data.filter((item) => item.id !== id));
+  };
   const actionColumn = [
     {
       field: "action",
@@ -24,7 +29,7 @@ const DataTable = () => {
               className="deleteButton"
               // onClick={() => handleDelete(params.row.id)}
             >
-              <DeleteIcon />
+              <DeleteIcon onClick={() => handleDelete(params.row.id)} />
             </div>
           </div>
         );
@@ -44,7 +49,7 @@ const DataTable = () => {
       </div>
       <DataGrid
         className="container"
-        rows={userRows}
+        rows={data}
         columns={userColumns.concat(actionColumn)}
         pageSize={10}
         rowsPerPageOptions={[10]}
