@@ -123,4 +123,34 @@
       }
     }
   }
+  .single-container {
+    background-color: #070606;
+    .sub-container {
+      .top {
+        .item {
+          .details {
+            .detailItem {
+              border-radius: 10px;
+              margin-top: 5px;
+              background-color: #141414;
+              .itemKey {
+                color: #fa8c16;
+              }
+            }
+          }
+        }
+        background-color: #070606;
+        .top-left {
+          .editButton {
+            background-color: transparent;
+          }
+          background-color: #070606;
+        }
+      }
+      .single-bottom {
+        background-color: #070606;
+        padding-bottom: 50px;
+      }
+    }
+  }
 }

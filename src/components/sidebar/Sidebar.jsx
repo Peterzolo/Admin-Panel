@@ -1,5 +1,5 @@
 import "./Sidebar.scss";
-import Logo from "../../images/Video-logo.jpg";
+import Logo from "../../images/new-boostar-logo.png";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import PeopleIcon from "@mui/icons-material/People";
 import InventoryIcon from "@mui/icons-material/Inventory";
