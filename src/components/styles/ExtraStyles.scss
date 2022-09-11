@@ -1,0 +1,116 @@
+.app.dark {
+  background-color: #070606;
+  color: #fafafa;
+  .chart-grid {
+    stroke: #434343;
+  }
+  .table {
+    background-color: #070606;
+    .tableCell {
+      color: #969393;
+    }
+  }
+  .sidebar-container {
+    background-color: #070606;
+    .middle {
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 5px;
+
+        li {
+          list-style-type: none;
+          margin-top: 10px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 10px;
+          background-color: #121111;
+          width: 100%;
+          //   border-radius: 10px;
+          color: #40a9ff;
+          font-weight: 500;
+          cursor: pointer;
+          &:hover {
+            background-color: #181818;
+            color: #f0f0f0;
+          }
+          .list-item {
+            color: #f0f0f0;
+          }
+          .icon {
+            color: #fa8c16;
+          }
+        }
+        p {
+          color: #26c606;
+          background-color: #262626;
+          font-weight: 600;
+          padding: 10px;
+          text-align: center;
+          //   border-radius: 10px;
+          margin-top: 15px;
+          width: 100%;
+        }
+      }
+    }
+  }
+  //   datatable
+
+  .userTable {
+    .add-new-wrapper {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      .new-add-title {
+        color: #00474f;
+        font-weight: 600;
+      }
+      .add-link {
+        margin-right: 30px;
+        margin-bottom: 10px;
+        .addNew {
+          text-decoration: none;
+          color: green;
+          border: 1px solid green;
+          border-radius: 5px;
+          padding: 10px;
+          margin-bottom: 10px;
+          font-weight: bold;
+        }
+      }
+    }
+    .container {
+      background-color: #1b1a1a;
+      color: #8d8a8a;
+      border: 1px solid rgb(46, 43, 43);
+    }
+
+    .cellAction {
+      display: flex;
+      align-items: center;
+      width: 40px;
+      gap: 20px;
+      .viewButton {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #d9d9d9;
+        cursor: pointer;
+      }
+      .deleteButton {
+        border: 1px solid #d9d9d9;
+        padding: 10px;
+        color: #a9a6a5;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+    }
+  }
+  //   input {
+  //     background-color: transparent;
+  //   }
+}

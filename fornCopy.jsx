@@ -20,7 +20,6 @@ const initialState = {
 
 const New = () => {
   const [formdata, setFormdata] = useState(initialState);
-  const [file, setFile] = useState("");
   const {
     username,
     fullName,
@@ -43,11 +42,7 @@ const New = () => {
         </div>
         <div className="bottomNew">
           <div className="bottom-left">
-            <img
-              src={file ? URL.createObjectURL(file) : userAvatar}
-              alt="user-avatar"
-              className="avatarImage"
-            />
+            <img src={userAvatar} alt="user-avatar" className="avatarImage" />
           </div>
 
           <div className="bottom-right">
@@ -136,12 +131,7 @@ const New = () => {
                 <label htmlFor="file" className="file-input">
                   Image <DriveFolderUploadOutlinedIcon className="icon" />{" "}
                 </label>
-                <input
-                  type="file"
-                  id="file"
-                  style={{ display: "none" }}
-                  onChange={(e) => setFile(e.target.files[0])}
-                />
+                <input type="file" id="file" style={{ display: "none" }} />
               </div>
               <button className="sumbit-button" type="submit">
                 Add User

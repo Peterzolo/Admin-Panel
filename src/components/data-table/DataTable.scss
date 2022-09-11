@@ -1,4 +1,28 @@
 .userTable {
+  .add-new-wrapper {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    .new-add-title {
+      color: #00474f;
+      font-weight: 600;
+    }
+    .add-link {
+      margin-right: 30px;
+      margin-bottom: 10px;
+      .addNew {
+        text-decoration: none;
+        color: green;
+        border: 1px solid green;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+    }
+  }
   .container {
     background-color: #f5f5f5;
   }

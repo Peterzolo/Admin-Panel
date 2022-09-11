@@ -13,74 +13,95 @@ import AirportShuttleIcon from "@mui/icons-material/AirportShuttle";
 import ApiIcon from "@mui/icons-material/Api";
 import DocumentScannerIcon from "@mui/icons-material/DocumentScanner";
 import BiotechIcon from "@mui/icons-material/Biotech";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
     <div className="sidebar-container">
       <div className="top">
         <span className="logo">
-          <img src={Logo} alt="" width="50" className="logo-image" />
+          <Link to="/">
+            <img src={Logo} alt="" width="50" className="logo-image" />
+          </Link>
         </span>
       </div>
       <div className="middle">
         <ul>
           <p className="title">Main</p>
           <li>
-            <DashboardIcon />
-            <div>Dashboard</div>
+            <DashboardIcon className="icon" />
+            <div className="list-item">Dashboard</div>
           </li>
           <li>
-            <PeopleIcon />
-            <div>Users</div>
+            <Link
+              to="/user"
+              style={{
+                textDecoration: "none",
+                color: "#2e2e2e",
+                textAlign: "center",
+              }}
+            >
+              <PeopleIcon className="icon" />
+              <div className="list-item">Users</div>
+            </Link>
           </li>
           <li>
-            <InventoryIcon />
-            <div>Product</div>
+            <Link
+              to="/product"
+              style={{
+                textDecoration: "none",
+                color: "#2e2e2e",
+                textAlign: "center",
+              }}
+            >
+              <InventoryIcon className="icon" />
+              <div className="list-item">Product</div>
+            </Link>
           </li>
           <p className="title">Business</p>
           <li>
-            <PaymentIcon />
-            <div>Payment</div>
+            <PaymentIcon className="icon" />
+            <div className="list-item">Payment</div>
           </li>
           <li>
-            <AirportShuttleIcon />
-            <div>Delivery</div>
+            <AirportShuttleIcon className="icon" />
+            <div className="list-item">Delivery</div>
           </li>
           <li>
-            <ApiIcon />
-            <div>Api</div>
+            <ApiIcon className="icon" />
+            <div className="list-item">Api</div>
           </li>
           <p className="title">Info</p>
           <li>
-            <DocumentScannerIcon />
-            <div>Documentation</div>
+            <DocumentScannerIcon className="icon" />
+            <div className="list-item">Documentation</div>
           </li>
           <li>
-            <BiotechIcon />
-            <div>Bio</div>
+            <BiotechIcon className="icon" />
+            <div className="list-item">Bio</div>
           </li>
           <li>
-            <NotificationsOffIcon />
-            <div>Notification</div>
+            <NotificationsOffIcon className="icon" />
+            <div className="list-item">Notification</div>
           </li>
 
           <li>
-            <AssessmentIcon />
-            <div>Statistic</div>
+            <AssessmentIcon className="icon" />
+            <div className="list-item">Statistic</div>
           </li>
           <li>
-            <SettingsIcon />
-            <div>Setting</div>
+            <SettingsIcon className="icon" />
+            <div className="list-item">Setting</div>
           </li>
           <p className="title">Users</p>
           <li>
-            <AccountCircleIcon />
-            <div>Profile</div>
+            <AccountCircleIcon className="icon" />
+            <div className="list-item">Profile</div>
           </li>
 
           <li>
-            <LogoutIcon />
-            <div>Logout</div>
+            <LogoutIcon className="icon" />
+            <div className="list-item">Logout</div>
           </li>
         </ul>
       </div>

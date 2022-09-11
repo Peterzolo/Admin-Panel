@@ -1,30 +1,33 @@
-.home-page{
-   padding-left: 10px;
-   padding-right: 10px;
-   .widgets, .chart{
+.home-page {
+  display: flex;
+  .homeContainer {
+    flex: 6;
+    .widgets,
+    .chart {
       display: flex;
       align-items: center;
       gap: 20px;
       padding: 20px;
-   }
-   .chart{
+    }
+    .chart {
       padding: 5px 20px;
-     
-   }
-   .hr{
+    }
+    .hr {
       // color: red;
       height: 10px;
       background-color: #d9d9d9;
-   }
-   .listContainer{
+    }
+    .listContainer {
       -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
       box-shadow: 2px 4px 10px 1px #c9c9c978;
       padding: 10px;
-      .list-title{
-         font-weight: 600;
-         color: #69c0ff;
-         text-align: center;
-         letter-spacing: 6px;
+      .list-title {
+        font-weight: 600;
+        color: #69c0ff;
+        text-align: center;
+        letter-spacing: 6px;
+        margin-bottom: 15px;
       }
-   }
+    }
+  }
 }

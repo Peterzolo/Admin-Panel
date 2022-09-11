@@ -11,30 +11,23 @@ import "./Home.scss";
 const Home = () => {
   return (
     <div className="home-page">
-      <div className="row">
-        <div className="col-md-2">
-          <Sidebar />
+      <Sidebar />
+      <div className="homeContainer">
+        <Navbar />
+        <div className="widgets">
+          <Widget type="user" />
+          <Widget type="order" />
+          <Widget type="earning" />
+          <Widget type="balance" />
         </div>
-        <div className="col-md-10">
-          <Navbar />
-          <div className="widgets">
-            <Widget type="user" />
-            <Widget type="order" />
-            <Widget type="earning" />
-            <Widget type="balance" />
-          </div>
-          <div className="chart">
-            <Featured />
-            <Chart
-              aspect={3 / 2}
-              title="Monthly Sales Report [ 1st half] 2022"
-            />
-          </div>
-          <hr className="hr" />
-          <div className="listContainer">
-            <div className="list-title">Latest Transactions</div>
-            <ListTable />
-          </div>
+        <div className="chart">
+          <Featured />
+          <Chart aspect={3 / 2} title="Monthly Sales Report [ 1st half] 2022" />
+        </div>
+        <hr className="hr" />
+        <div className="listContainer">
+          <div className="list-title">Latest Transactions</div>
+          <ListTable />
         </div>
       </div>
     </div>

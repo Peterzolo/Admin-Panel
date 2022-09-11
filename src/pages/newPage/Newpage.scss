@@ -9,6 +9,7 @@
         font-size: 20px;
         color: #1890ff;
         font-weight: bold;
+        text-align: center;
       }
       padding: 10px;
       margin: 2px;
@@ -22,6 +23,7 @@
           width: 100px;
           height: 100px;
           object-fit: cover;
+          border-radius: 50%;
         }
       }
       .bottom-right {
@@ -44,14 +46,12 @@
               padding: 20px;
               width: 50%;
               border: none;
-              border-bottom: 1px solid green;
+              border-bottom: 1px solid #1890ff;
               .icon {
                 color: #d46b08;
                 font-size: 30px;
-                // background-color: grey;
-                // padding: 10px;
                 max-width: 30px;
-                border: 1px solid grey;
+                cursor: pointer;
               }
             }
 
@@ -59,11 +59,11 @@
               width: 100%;
               //   border-radius: 10px;
               border: none;
-              background-color: #e6f7ff;
+              background-color: #f5f5f5;
               text-align: center;
               font-style: italic;
               padding: 10px;
-              border-bottom: 1px solid blue;
+              border-bottom: 1px solid #1890ff;
 
               ::placeholder {
                 color: #1890ff;

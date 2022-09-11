@@ -18,7 +18,7 @@ const initialState = {
   country: "",
 };
 
-const New = () => {
+const NewProduct = () => {
   const [formdata, setFormdata] = useState(initialState);
   const [file, setFile] = useState("");
   const {
@@ -39,7 +39,7 @@ const New = () => {
       <div className="newContainer">
         <Navbar />
         <div className="topNew">
-          <h2>Add New user</h2>
+          <h2>Add New Product</h2>
         </div>
         <div className="bottomNew">
           <div className="bottom-left">
@@ -139,12 +139,12 @@ const New = () => {
                 <input
                   type="file"
                   id="file"
-                  style={{ display: "none" }}
                   onChange={(e) => setFile(e.target.files[0])}
+                  style={{ display: "none" }}
                 />
               </div>
               <button className="sumbit-button" type="submit">
-                Add User
+                Add Product
               </button>
             </form>
           </div>
@@ -154,4 +154,4 @@ const New = () => {
   );
 };
 
-export default New;
+export default NewProduct;

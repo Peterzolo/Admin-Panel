@@ -51,7 +51,8 @@ const Chart = ({ aspect, title }) => {
       <div className="chart-title">{title}</div>
       <ResponsiveContainer width="100%" aspect={aspect}>
         <BarChart width={730} height={250} data={data}>
-          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" stroke="gray" />
+          <CartesianGrid strokeDasharray="3 3" className="chart-grid" />
           <XAxis dataKey="month" />
           {/* <YAxis /> */}
           <Tooltip />
